@@ -54,7 +54,12 @@ console.log('Exercise 3: The sum of numbers less than 15, with these conditions,
 // The input string will only consist of lower case letters and/or spaces.
 
 function getCount(str) {
-  return 0
+  const strArr = str.split('')
+  let count = 0
+  strArr.forEach(char => {
+    'aeiou'.includes(char.toLowerCase()) ? count += 1 : ''
+  })
+  return count
 }
 
 console.log(`Exercise 4: Apple has ${getCount('Apple')} vowels`);
