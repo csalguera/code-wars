@@ -57,4 +57,4 @@ function getCount(str) {
   return 0
 }
 
-console.log(`Exercise 4: Apple has ${getCount} vowels`);
+console.log(`Exercise 4: Apple has ${getCount('Apple')} vowels`);
