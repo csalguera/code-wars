@@ -45,3 +45,16 @@ function solution(number) {
 }
 
 console.log('Exercise 3: The sum of numbers less than 15, with these conditions, is ', solution(15));
+
+//! Vowel Count
+// Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  return 0
+}
+
+console.log(`Exercise 4: Apple has ${getCount} vowels`);
