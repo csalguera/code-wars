@@ -6,7 +6,7 @@ function multiply(a, b) {
   // Code did not return anything, hence undefined
 }
 
-console.log('Exercise 1:', multiply(4, 5));
+console.log('Exercise 1: 4 * 5 is', multiply(4, 5));
 
 //! Even or Odd
 // Create a function that takes an integer as an argument and returs "Even" for even numbers or "Odd" for odd numbers.
@@ -18,4 +18,4 @@ function evenOrOdd(num) {
   return !(num % 2) ? 'Even' : 'Odd'
 }
 
-console.log(evenOrOdd(8));
+console.log('Exercise 2: 8 is', evenOrOdd(8));
