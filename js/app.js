@@ -4,7 +4,8 @@
 // Problem
 
 function multiply(a, b) {
-  a * b
+  return a * b
+  // Code did not return anything, hence undefined
 }
 
 console.log(multiply(4, 5));
