@@ -28,5 +28,20 @@ console.log('Exercise 2: 8 is', evenOrOdd(8));
 // Note, if the number is a multiple of both 3 and 5, only count it once.
 
 function solution(number) {
-
+  let sum = 0
+  for (let i = 0; i < number; i++) {
+    if (!(i % 3) && !(i % 5)) {
+      // adds to sum if i is divisible by 3 and 5
+      sum += i
+    } else if (!(i % 3)) {
+      // adds to sum if i is divisible by 3
+      sum += i
+    } else if (!(i % 5)) {
+      // adds to sum if i is divisible by 5
+      sum += i
+    }
+  }
+  return sum
 }
+
+console.log('Exercise 3: The sum of numbers less than 15, with these conditions, is ', solution(15));
