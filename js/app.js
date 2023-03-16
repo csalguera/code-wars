@@ -116,7 +116,19 @@ console.log(`Exercise 7: ${digitize(1234)}`)
 // However, the arrays can have varying lengths, not just limited to 4.
 
 const binaryArrayToNumber = arr => {
-  return arr
+  let value = 0
+  // Reverse array so lowest value is at beginning
+  const binArr = arr.reverse()
+  // Iterate through each number in array
+  for (let i = 0; i < binArr.length; i++) {
+    // Use .length for arrays of varying legnths
+    // The value should increase exponentially when interating to the next index
+    // Use ternary operator to set the base to 2 if there is a truthy value (1) at each index
+    // If the value at index 0 is falsy, return 0
+    value += binArr[i] ? Math.pow(2, i) : 0
+  }
+  // Return the sum of each value
+  return value
 }
 
-console.log(`Exercise 8: ${binaryArrayToNumber([0, 1, 1, 0])} is equal to 6`);
+console.log(`Exercise 8: ${binaryArrayToNumber([1, 1, 0, 0, 0, 1])}`);
