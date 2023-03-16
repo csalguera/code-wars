@@ -76,7 +76,9 @@ console.log(`Exercise 4: Apple has ${getCount('Apple')} vowels`);
 // Note: for this kata y isn't considered a vowel.
 
 function disemvowel(str) {
-  return str;
+  strArr = str.split('')
+  const vowels = (char => 'aeiou'.includes(char.toLowerCase()))
+  return strArr.filter(char => !vowels(char)).join('')
 }
 
 console.log(`Exercise 5: ${disemvowel('This string is missing vowels.')}`);
