@@ -113,6 +113,8 @@ console.log(`Exercise 7: ${digitize(1234)}`)
 
 // Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
 
+// However, the arrays can have varying lengths, not just limited to 4.
+
 const binaryArrayToNumber = arr => {
   return arr
 }
