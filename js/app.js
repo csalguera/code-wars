@@ -87,7 +87,7 @@ console.log(`Exercise 5: ${disemvowel('This string is missing vowels.')}`);
 // Complete the solution so that it reverses the string passed into it.
 
 function reverseString(str){
-  
+  return str.split('').reverse().join('')
 }
 
 console.log(`Exercise 6: ${reverseString('world')}`);
