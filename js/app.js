@@ -96,7 +96,14 @@ console.log(`Exercise 6: ${reverseString('world')}`);
 // Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
 function digitize(n) {
-  return n
+  // An integer needs to be converted to a string with toString method
+  // The new string can be split with the split string method
+  // The array of strings can be reversed
+  const strArr = n.toString().split('').reverse()
+  // map through array of strings and convert each back to a number with parseInt method
+  const numsArr = strArr.map(char => parseInt(char))
+  // return new array of numbers
+  return numsArr
 }
 
 console.log(`Exercise 7: ${digitize(1234)}`)
